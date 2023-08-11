@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ptbr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algorítmo 62</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body style="background: #22222a; background: linear-gradient(90deg, #22222a 0%, #22222f 50%, #22222a 100%);">
+    <center>
+        <h1 class="texto" style="margin-top: 100px;">Número Secreto</h1>
+        <h3 class="texto">Algorítmo 62</h3>
+        <input type="number" name="numero" id="campo"><br>
+        <input type="button" value="Trocar número" class="botao" onclick="num();"><br>
+        <input type="button" value="Enter" id="botao" class="botao" onclick="alg();">
+        <p id="resultado" class="texto" style="position: relative;top: 55px; font-size: 25px;"></p>
+    </center>
+    <img class="pos posleft posbottom" src="img/img2.png">
+    <img class="pos posright postop" src="img/gif.gif">
+    <textarea class="posleft postop" cols="50" rows="23">
+Algoritmo "ALG 62"
+// Professor   : Charles
+// Autor(a)    : Pedro Pires
+// Data atual  : 06/07/2023
+Var
+randNum, num: inteiro
+
+Inicio
+randNum <- randi(101)
+escreva("Faça o seu chute: ")
+leia(num)
+enquanto (num<>randNum) faca
+            se (randNum>num) entao
+            escreval("O número é maior que", num)
+            senao
+            escreval("O número é menor que", num)
+            fimse
+            escreva("Tente novamente: ")
+            leia(num)
+fimenquanto
+escreval("Parabéns! O número era ", randNum)
+Fimalgoritmo  
+    </textarea>
+</body>
+<script src="./script/script.js"></script>
+</html>
